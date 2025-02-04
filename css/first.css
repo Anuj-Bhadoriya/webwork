@@ -1,0 +1,274 @@
+
+  /* Make Navbar Background White */
+  #ftco-navbar {
+    background-color: white !important;
+    padding: 15px 0; /* Adds better spacing */
+  }
+
+  /* Change "Unicare" Brand Color to Saffron */
+  .navbar-brand {
+    color: #FF9933 !important; /* Saffron color */
+    font-size: 26px; /* Increase font size */
+    font-weight: bold;
+  }
+
+  .navbar-brand:hover {
+    color: #E65100 !important; /* Darker shade on hover */
+  }
+
+  /* Change Menu Item Color & Font Size */
+  .navbar-nav .nav-link {
+    color: #FF9933 !important; /* Saffron */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+  }
+
+  /* Change Menu Item Hover Color */
+  .navbar-nav .nav-link:hover {
+    color: #E65100 !important; /* Darker shade on hover */
+  }
+
+  /* Highlight Active Menu Item */
+  .navbar-nav .nav-item.active .nav-link {
+    color: #E65100 !important; /* Darker Saffron for active item */
+  }
+
+  /* Style for Donate Button */
+  .navbar-nav .cta .nav-link {
+    background-color: #FF9933 !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px; /* Increased font size */
+  }
+
+  .navbar-nav .cta .nav-link:hover {
+    background-color: #E65100 !important;
+  }
+/* Ensure overlays do not create vertical lines */
+.overlay-1, .overlay-2, .overlay-3, .overlay-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* Ensure full width */
+  height: 100%; /* Ensure full height */
+  background: transparent !important; /* Remove any unwanted background */
+}
+
+/* Fix image stretching issues */
+.slider-item {
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Ensure smooth transitions between slides */
+.owl-carousel .owl-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+  /* Call-to-Area Styling */
+
+  /* Call-to-Area Styling */
+  .callto-area {
+    background: linear-gradient(to right, #FF9933, #E65100); /* Saffron Gradient */
+    padding: 25px 40px;
+    position: relative;
+    margin-top: -50px; /* Overlaps carousel slightly */
+    z-index: 10; /* Ensures it's above the slider */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds soft shadow effect */
+    width: 70%; /* Restricts width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Center text and button */
+  .callto-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+
+  /* White text */
+  .callto-area h3 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /* Donate Button */
+  .head-btn2 {
+    background: white;
+    color: #E65100 !important;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .head-btn2:hover {
+    background: #E65100 !important;
+    color: white !important;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .callto-area {
+      width: 90%; /* Adjust for smaller screens */
+      padding: 20px;
+    }
+    
+    .callto-wrap {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .head-btn2 {
+      margin-top: 10px;
+    }
+  }
+  
+
+
+  .callto-area {
+    background: linear-gradient(to right, #FF9933, #E65100); /* Saffron Gradient */
+    padding: 25px 40px;
+    position: relative;
+    margin-top: -50px; /* Overlaps carousel slightly */
+    z-index: 10; /* Ensures it's above the slider */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds soft shadow effect */
+    width: 80%; /* Restricts width */
+    margin-left: auto;
+    margin-right: auto;
+  /* Center text and button */
+  .callto-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  }
+  /* White text */
+  .callto-area h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /* Donate Button */
+  .head-btn2 {
+    background: white;
+    color: #E65100 !important;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .head-btn2:hover {
+    background: #E65100 !important;
+    color: white !important;
+  }
+  .custom-heading {
+    font-size: x-large; /* Keeps the same size */
+    font-weight: bold; /* Makes text bold */
+    color: white !important; /* Kesaria (Saffron) color */
+    font-family: 'Arial', sans-serif; /* Modern and readable font */
+  }
+  .custom-bg1 {
+    background-color: 	#9932CC !important; /* Kesaria (Saffron) color */
+    color: white; /* Ensuring text is readable */
+    padding: 20px; /* Adds spacing inside */
+    border-radius: 8px; /* Adds smooth rounded edges */
+  }
+  .custom-bg2 {
+    background-color:		#20B2AA !important; /* Kesaria (Saffron) color */
+    color: white; /* Ensuring text is readable */
+    padding: 20px; /* Adds spacing inside */
+    border-radius: 8px; /* Adds smooth rounded edges */
+  }
+
+  .custom-bg3 {
+    background-color:	#C71585 !important; /* Kesaria (Saffron) color */
+    color: white; /* Ensuring text is readable */
+    padding: 20px; /* Adds spacing inside */
+    border-radius: 8px; /* Adds smooth rounded edges */
+  }
+  .custom-bg4 {
+    background-color:	#E9967A	 !important; /* Kesaria (Saffron) color */
+    color: white; /* Ensuring text is readable */
+    padding: 20px; /* Adds spacing inside */
+    border-radius: 8px; /* Adds smooth rounded edges */
+  }
+  .about-area {
+    background-color: #1c1c1c; /* Matte black */
+    color: white;
+    padding: 80px 0; /* Space above and below */
+}
+
+.container-fluid {
+    margin-top: 50px; /* Space above the container */
+}
+
+.about-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.about-right {
+    padding: 40px;
+}
+
+.about-right h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white; /* Ensures heading is white */
+}
+
+.about-right p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: white; /* Ensures paragraph text is also white */
+}
+
+/* Stylish Button */
+.primary-btn {
+    background: linear-gradient(135deg, #ff9a00, #ff6f00); /* Safron gradient */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(255, 153, 0, 0.5); /* Glow effect */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Animation */
+.primary-btn:hover {
+    background: linear-gradient(135deg, #ff6f00, #ff3d00); /* Darker safron */
+    transform: scale(1.05); /* Slight increase in size */
+    box-shadow: 0px 6px 14px rgba(255, 90, 0, 0.7); /* Stronger glow */
+}
+
+/* Button Click Animation */
+.primary-btn:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+}
