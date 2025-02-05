@@ -1,0 +1,46 @@
+ /* Make Navbar Background White */
+ #ftco-navbar {
+    background-color: white !important;
+    padding: 15px 0; /* Adds better spacing */
+  }
+
+  /* Change "Unicare" Brand Color to Saffron */
+  .navbar-brand {
+    color: #FF9933 !important; /* Saffron color */
+    font-size: 26px; /* Increase font size */
+    font-weight: bold;
+  }
+
+  .navbar-brand:hover {
+    color: #E65100 !important; /* Darker shade on hover */
+  }
+
+  /* Change Menu Item Color & Font Size */
+  .navbar-nav .nav-link {
+    color: #FF9933 !important; /* Saffron */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+  }
+
+  /* Change Menu Item Hover Color */
+  .navbar-nav .nav-link:hover {
+    color: #E65100 !important; /* Darker shade on hover */
+  }
+
+  /* Highlight Active Menu Item */
+  .navbar-nav .nav-item.active .nav-link {
+    color: #E65100 !important; /* Darker Saffron for active item */
+  }
+
+  /* Style for Donate Button */
+  .navbar-nav .cta .nav-link {
+    background-color: #FF9933 !important;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px; /* Increased font size */
+  }
+
+  .navbar-nav .cta .nav-link:hover {
+    background-color: #E65100 !important;
+  }

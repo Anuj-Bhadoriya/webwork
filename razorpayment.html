@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/razorpayment.css">
+</head>
+<body>
+
+
+<!--form to enter details-->
+<div class="container">
+    <form action="">
+        <div class="row">
+            <div class="column">
+                <h3 class="title">Details :</h3>
+                <div class="input-box">
+                    <span>Full Name :</span>
+                    <input type="text" placeholder="Jacob Aiden">
+                </div>
+                <div class="input-box">
+                    <span>Email Id :</span>
+                    <input  id="email" type="email" placeholder="example@example.com">
+                </div>
+                <div class="input-box">
+                    <span>Address :</span>
+                    <input type="text" placeholder="Room - Street - Locality">
+                </div>
+                <div class="input-box">
+                    <span>Mobile Number</span>
+                    <input id="contact" type="text" placeholder="0123456789">
+                </div>
+                <div class="input-box">
+                    <span>PAN CARD</span>
+                    <input type="text" placeholder="pancard">
+                </div>
+
+                <div class="flex">
+                    <div class="input-box">
+                        <span>currency</span>
+                        <input type="text" placeholder="Germany">
+                    </div>
+                    <div class="input-box">
+                        <span>Amount :</span>
+                        <input id="amount" type="number" placeholder="123 456">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="column">
+                <h3 class="title">Payment</h3>
+                <div class="input-box">
+                    <span>Cards Accepted :</span>
+                    <img src="imgcards.png" alt="">
+                </div>
+                <div class="input-box">
+                    <span>Name On Card :</span>
+                    <input type="text" placeholder="Mr. Jacob Aiden">
+                </div>
+                <div class="input-box">
+                    <span>Credit Card Number :</span>
+                    <input type="number" placeholder="1111 2222 3333 4444">
+                </div>
+                <div class="input-box">
+                    <span>Exp. Month :</span>
+                    <input type="text" placeholder="August">
+                </div>
+            
+                <div class="flex">
+                    <div class="input-box">
+                        <span>Exp. Year :</span>
+                        <input type="number" placeholder="2025">
+                    </div>
+                    <div class="input-box">
+                        <span>CVV :</span>
+                        <input type="number" placeholder="123">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <button type="submit" class="btn">Submit</button>
+        <!-- <button id="rzp-button1 " class="btn btn-outline-dark btn-lg"><i class="fas fa-money-bill"></i> Pay Amount </button> -->
+    </form>
+</div>
+<!--end details-->
+
+
+    <!--First step of payment-->
+    <button id="rzp-button1" class="btn btn-outline-dark btn-lg"><i class="fas fa-money-bill"></i> Pay Amount </button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+ var options = {
+    "key": "[YOUR_KEY_ID]", // Enter the Key ID generated from the Dashboard
+    "amount": "1000",        //this is written in paise
+    "currency": "INR",
+    "description": "Acme Corp",
+    "image": "example.com/image/rzp.jpg",
+    "prefill":
+    {
+      "email": "banuj2601singh@gmail.com",      //change the email id
+      "contact": +917089331183,                   //change the contact
+    },
+
+    // document.getElementById('rzp-button1').onclick = function() {
+    //         var options = {
+    //             "key":  "[YOUR_KEY_ID]",// Get Key ID from input
+    //             "amount": document.getElementById('amount').value, // Get amount from input
+    //             "currency": document.getElementById('currency').value, // Get currency from input
+    //             "description": document.getElementById('description').value, // Get description from input
+    //             "image": "example.com/image/rzp.jpg",
+    //             "prefill": {
+    //                 "email": document.getElementById('email').value, // Get email from input
+    //                 "contact": document.getElementById('contact').value // Get contact from input
+    //             },
+            
+
+    config: {
+      display: {
+        blocks: {
+          utib: { //name for Axis block
+            name: "Pay Using Axis Bank",
+            instruments: [
+              {
+                method: "card",
+                issuers: ["UTIB"]
+              },
+              {
+                method: "netbanking",
+                banks: ["UTIB"]
+              },
+            ]
+          },
+          other: { //  name for other block
+            name: "Other Payment Methods",
+            instruments: [
+              {
+                method: "card",
+                issuers: ["ICIC"]
+              },
+              {
+                method: 'netbanking',
+              }
+            ]
+          }
+        },
+        hide: [
+          {
+          method: "upi"
+          }
+        ],
+        sequence: ["block.utib", "block.other"],
+        preferences: {
+          show_default_blocks: false // Should Checkout show its default blocks?
+        }
+      }
+    },
+    "handler": function (response) {
+      alert(response.razorpay_payment_id);
+    },
+    "modal": {
+      "ondismiss": function () {
+        if (confirm("Are you sure, you want to close the form?")) {
+          txt = "You pressed OK!";
+          console.log("Checkout form closed by the user");
+        } else {
+          txt = "You pressed Cancel!";
+          console.log("Complete the Payment")
+        }
+      }
+    }
+  };
+//};
+  var rzp1 = new Razorpay(options);
+  document.getElementById('rzp-button1').onclick = function (e) {
+    rzp1.open();
+    e.preventDefault();
+  }
+</script>
+
+</body>
+</html>
