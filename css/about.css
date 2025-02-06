@@ -44,3 +44,63 @@
   .navbar-nav .cta .nav-link:hover {
     background-color: #E65100 !important;
   }
+
+  .wrap{
+    background-color: #E65100 !important;
+  }
+
+
+  .ftco-hireme .btn-primary {
+    color: white;
+}
+.ftco-hireme .btn-primary:hover{
+  color: #E65100 !important;
+}
+
+
+  /* footer donate now button */
+  .btn {
+    background-color: #FF9933 !important;
+    border-color : #FF9933 !important ;
+  }
+  .btn.btn-quarternary {
+  background:  #FF9933 !important;
+      /*border: 2px solid #18a577; */
+      color: #fff;
+}
+.btn.btn-quarternary:hover {
+  background-color: #E65100 !important;
+  color:#fff;
+}
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+/* footer facbook,twitter */
+ 
+  .footer .ftco-footer-social li a {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FF9933 !important;
+  }
+
+  .footer .ftco-footer-social li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color:  #E65100 !important;
+  }
+
+  .footer ul.list-unstyled li a:hover{
+    color:  #E65100 !important;
+  }
+/* <!--about content--> */
+@media (min-width: 768px) {
+  .col-md-6 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 98%;
+      
+  }
+}
+
+
+  

@@ -44,3 +44,7 @@
   .navbar-nav .cta .nav-link:hover {
     background-color: #E65100 !important;
   }
+
+  .container{
+    background-color: #E65100 !important;
+  }
