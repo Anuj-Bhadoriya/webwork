@@ -1,3 +1,5 @@
+ 
+ /* --start nav-- */
  /* Make Navbar Background White */
  #ftco-navbar {
     background-color: white !important;
@@ -44,3 +46,74 @@
   .navbar-nav .cta .nav-link:hover {
     background-color: #E65100 !important;
   }
+  /* --end nav-- */
+
+  
+  /* footer donate now button */
+  .btn {
+    background-color: #FF9933 !important;
+    border-color : #FF9933 !important ;
+  }
+  .btn.btn-quarternary {
+  background:  #FF9933 !important;
+      /*border: 2px solid #18a577; */
+      color: #fff;
+}
+.btn.btn-quarternary:hover {
+  background-color: #E65100 !important;
+  color:#fff;
+}
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+/* footer facbook,twitter */
+ 
+.footer .ftco-footer-social li a {
+  background: rgba(255, 255, 255, 0.1);
+  color: #FF9933 !important;
+}
+
+.footer .ftco-footer-social li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color:  #E65100 !important;
+}
+
+.footer ul.list-unstyled li a:hover{
+  color:  #E65100 !important;
+}
+/* footer end  */
+
+/* bootstrap according */
+.link-underline:hover{
+  color: #E65100 !important;
+}
+.looking-Ahead{
+  line-height: 1.5;
+  color: #E65100 !important;
+  font-weight: 400;
+  font-size:2rem;
+  margin-bottom: 1.5rem !important;
+  background:white;
+  border-block:none;
+  border-right: 0cap;
+}
+.accordion-body{
+  font-size: 1.25rem;
+    font-weight: 300;
+    font-family: "Montserrat", Arial, sans-serif;
+    background: #fff;
+    
+    color: gray;
+}
+.bg-light{
+  background: white;
+}
+.about-before-supporter{
+  margin:20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #fff;
+  
+  color: gray;
+}

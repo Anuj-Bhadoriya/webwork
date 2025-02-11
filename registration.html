@@ -1,0 +1,177 @@
+<!-- security token f9ffd3d2-6d2e-4eea-b4a4-1ff80b9d4d4e -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   
+    
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+<!-- <script src="js/register.js"></script>
+    <script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">   
+(function(){
+emailjs.init({
+publicKey: "FmHnOD5JNTozt-7nW",
+});
+})();
+</script> -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+   
+        
+    <form method="POST" id="form">
+        <div class="container">
+            <a href="index.html" onclick="window.history.back();">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+              </svg> 
+              </a>
+        <h2>Registration Form</h2>
+       
+        <p>Basic Acting, Screenplay Writing and Photography Workshops by KalaVyom Foundation, Department of Culture, Madhya Pradesh, National School of Drama, New Delhi and Mansarovar Global University, Bhopal.</p>
+
+        <input type="hidden" name="access_key" value="1101349e-6f21-46d9-b37d-02460f68145d">
+          
+        <!-- <textarea name="message" required></textarea> -->
+        <div  class ="form-group">
+            <label for="participantName">Participant’s Name:</label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="Fathername" required>
+        </div>
+        <div class="form-group">
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="motherName" required>
+        </div>
+       
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+      
+        <div class="form-group">
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="emergencyNumber">Emergency Number:</label>
+            <input type="tel" id="emergencyNumber" name="emergencyNumber" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Physical Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="idNumber">Identification Number:</label>
+            <input type="text" id="idNumber" name="idNumber" required>
+        </div>
+        <div class="form-group">
+            <label>Which Workshops Are You Interested in Registration?</label>
+            <div>
+                <input type="checkbox" id="acting" name="workshops" value="Acting">
+                <label for="acting">Acting</label>
+            </div>
+            <div>
+                <input type="checkbox" id="photography" name="workshops" value="Photography">
+                <label for="photography">Photography</label>
+            </div>
+            <div>
+                <input type="checkbox" id="screenplay" name="workshops" value="Screenplay Writing">
+                <label for="screenplay">Screenplay Writing</label>
+            </div>
+        </div>
+        <p>Registration Fees: 500.00 (Rupees Five Hundred Only)</p>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" id="consent" name="consent" required>
+                I Consent to Allowing KalaVyom Foundation to Use the Information Shared Here For Further Research And Development To Help Make These Skill And Capacity-Building Workshops More Accessible.
+            </label>
+        </div>
+        <button type="submit">Submit Form</button>
+        <div id="result"></div>
+        </div>
+    </form>
+<script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+    
+    form.addEventListener('submit', function(e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        result.innerHTML = "Please wait..."
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = json.message;
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+    </script>
+
+</body>
+</html>
+<!-- 5F52D8CFBD6602BE93BAB705B9C951FB39C7 -->

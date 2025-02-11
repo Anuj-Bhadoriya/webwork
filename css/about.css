@@ -91,6 +91,8 @@
   .footer ul.list-unstyled li a:hover{
     color:  #E65100 !important;
   }
+  
+  /* footer end  */
 /* <!--about content--> */
 @media (min-width: 768px) {
   .col-md-6 {
@@ -102,5 +104,69 @@
   }
 }
 
+.heading-section .subheading {
+  font-size: 32px;
+  display: block;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
+@media (min-width: 768px) {
+  .pt-md-5, .py-md-5 {
+      padding-top: -9rem !important;
+  }
+}
+.aboutus-content{
+  font-size: 1.25rem;
+}
+
+.ftco-no-pb {
+  margin-top: -56px;
+  padding-bottom: 0 !important;
+}
+
+/* our vission and mission */
+.missionandvission {
+  line-height: 1.5;
+  color: #E65100 !important;
+  font-weight: 400;
+}
+.link-underline:hover{
+  color: #E65100 !important;
+}
+.looking-Ahead{
+  line-height: 1.5;
+  color: #E65100 !important;
+  font-weight: 400;
+  font-size:2rem;
+  margin-bottom: 1.5rem !important;
+  padding-left:121px;
+}
+.accordion-body{
+  font-size: 1.25rem;
+    font-weight: 300;
+    font-family: "Montserrat", Arial, sans-serif;
+    background : white;  
+    /*  background -fff */   
+    color: gray;
+    padding-left: 121px;
+}
+
+.bg-light{
+  background : white;
+}
+.vis-mis-backcolor{
+  background-color: white;
+}
+.lookingAhead{
+  padding:140px;
+}
+
+.img-container{
+  width: 50px; /* Set to desired width */
+    height: auto; /* Height will adjust based on the image */
+    overflow: hidden;
+}
   
